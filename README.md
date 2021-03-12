@@ -24,9 +24,11 @@ The contributor on this app is myself, Briana Brucato.
 [Link to demo video on YouTube]()
 
 ## Screenshots
-[Command Line Screenshot]()
+[Command Line Screenshot 1](./assets/cli1.png)
 
-[Rendered HTML Page Screenshot]()
+[Command Line Screenshot 2](./assets/cli2.png)
+
+[Rendered HTML Page Screenshot](./assets/teampage.png)
 
 ## Repository
 [GitHub URL](https://github.com/bebrucato/team-profile-generator)
