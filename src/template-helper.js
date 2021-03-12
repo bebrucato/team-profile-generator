@@ -24,15 +24,15 @@ let generateProfile = memberArray => {
         
         let {name, role, email, id,} = memberArray[i]
        card+= `
-        <div class="card col" style="width: 18rem;">
+        <div class="card col-3 p-1" style="width: 18rem;">
         <div class="card-body card-header">
-            <h5 class="card-title">${name}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">${role}</h6>
+            <h5 class="card-title"><em><strong>${name}</strong></em></h5>
+            <h6 class="card-subtitle mb-2 text-dark"><strong>${role}</strong></h6>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Email: <a href=mailto:${email}>${email}</a></li>
-            <li class="list-group-item">Employee ID: ${id}</li>
-            <li class="list-group-item"> ${finalProperty}</li>
+            <li class="list-group-item"><u>Email:</u> <a href=mailto:${email}>${email}</a></li>
+            <li class="list-group-item"><u>Employee ID:</u> ${id}</li>
+            <li class="list-group-item"><u>${finalProperty}</u></li>
             
             
         </ul>
@@ -47,11 +47,14 @@ let generateProfile = memberArray => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Team Profile</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Quicksand:wght@300&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <div class="jumbotron">
-    <h1 class="text-center">My Team</h1>
+    <div class="jumbotron text-light bg-dark" id="main">
+    <h1 class="text-center team"><strong>My Team</strong></h1>
     </div> 
      
     <div class="container">
