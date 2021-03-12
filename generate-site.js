@@ -1,22 +1,13 @@
 const fs = require('fs')
 
-function renderSite(html) {
+
+function writeSite(html){
     fs.writeFile('./dist/index.html', html, err => {
-        if (err) {
-            throw err
-        }
-        console.log("it's here!")
-        copyfile()
-    })
+    if (err){
+         return (err)
+    }
+    console.log("saved")
+   })
 }
 
-const copyfile = () => {
-    fs.copyfile("./src/style.css", "./dist/style.css", err => {
-        if (err) {
-            console.log(err);
-        }
-        console.log("css successful!")
-    })
-}
-
-module.exports = renderSite, copyfile;
+module.exports = writeSite
