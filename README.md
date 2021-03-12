@@ -21,7 +21,7 @@ To use this app, the user must download node as well as the "inquirer" and "jest
 The contributor on this app is myself, Briana Brucato.
 
 ## Demo
-[Link to demo video on YouTube]()
+[Link to demo video on YouTube](https://youtu.be/j4qy9BNHi_I)
 
 ## Screenshots
 [Command Line Screenshot 1](./assets/cli1.png)
